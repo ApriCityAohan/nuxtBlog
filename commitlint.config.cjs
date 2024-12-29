@@ -70,6 +70,11 @@ module.exports = {
       { value: "ci: 集成", name: "集成:   🎡  修改 CI 配置、脚本", emoji: "🎡" },
       { value: "revert: 回退", name: "回退:   ⏪️  回滚 commit", emoji: "⏪️" },
       { value: "build: 打包", name: "打包:   🔨  项目打包发布", emoji: "🔨" },
+      {
+        value: "chore: 其他",
+        name: "其他:   🔧  对构建过程或辅助工具和库的更改（不影响源文件、测试用例）",
+        emoji: "🔧",
+      },
     ],
     useEmoji: true,
     themeColorCode: "",
