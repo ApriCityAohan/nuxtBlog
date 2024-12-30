@@ -1,0 +1,113 @@
+.prose {
+  // common styles
+  --common-transition: all 0.3s ease;
+  --common-rd: 6px;
+  --common-bd: #c9c7c2;
+  --common-bg: #69a79429;
+
+  max-width: 65em; // 最大宽度
+  margin: auto; // 居中
+
+  // 代码高亮
+  .hljs {
+    border-radius: var(--common-rd);
+  }
+
+  /* T1-6 标题 */
+  h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  /* list （列表）*/
+  ul,
+  ol {
+    padding-left: 2em;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  /* p */
+  p {
+    margin-block: 0.8em;
+    word-break: break-word;
+  }
+
+  /* anchor */
+  a {
+    text-decoration: underline var(--common-bd);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+    transition: var(--common-transition);
+
+    &:hover {
+      text-decoration-color: currentcolor;
+    }
+  }
+
+  /* img */
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+  }
+
+  /* 不包含代码块的code */
+  :not(pre) > code {
+    padding-inline: 0.3em;
+    font-weight: bold;
+    background-color: var(--common-bg);
+    border-radius: 3px;
+  }
+
+  /* blockquote（引用块） */
+  blockquote {
+    padding: 5px 1em;
+    font-style: italic;
+    background-color: var(--common-bg);
+    border-color: var(--common-bg);
+    border-left-width: 0.4em;
+    border-radius: var(--common-rd);
+
+    > p {
+      margin: 0.5em 0;
+    }
+  }
+
+  /* hr （分割线）*/
+  hr {
+    width: 200px;
+    margin: 2.5em auto;
+    border-color: currentcolor;
+    border-style: dashed;
+    opacity: 0.2;
+  }
+}
