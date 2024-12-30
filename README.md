@@ -1,75 +1,49 @@
-# Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+<div align="center">
 
-Make sure to install dependencies:
+## Nuxt-blog for Issue
 
-```bash
-# npm
-npm install
+</div>
 
-# pnpm
+<div align='center'>
+  <b>简体中文</b> | [English]()
+</div>
+
+
+本项目基于Github Issue 实现的博客项目, 新增和编辑文章更加快速方便，而且部署简单，无需服务器，只需配置环境变量即可使用。
+
+## 🚧 正在积极更新
+
+- [x] 基础构筑依赖
+- [x] 基础api编写
+- [ ] 页面基础布局
+- [ ] 基础数据渲染
+- [ ] ...更多
+
+## ✨ 特点
+(还在筹备当中)
+
+
+## 📖 使用方法
+(开发完毕后进行更新)
+
+## 🔧 本地开发
+
+### 确保环境
+
+- **Node.js** - [`v18.0.0`](https://nodejs.org/en) 或更新版本
+- **文本编辑器** - 推荐使用 [Visual Studio Code](https://code.visualstudio.com/) 以及 [Volar 扩展](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+
+
+确保安装依赖项：
+
+```shell
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+启动开发服务
+```shell
+pnpm run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
