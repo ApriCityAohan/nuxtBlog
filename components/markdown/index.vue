@@ -1,15 +1,16 @@
 <template>
   <div class="prose">
-    <DocRender :content="issue" />
+    <DocRender :content="typeof issue === 'string' ? issue : issue?.body" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { useCopyCode } from "markdown-it-copy-code";
+import type { Issue } from "@/api/type";
 import DocRender from "./DocRender.vue";
 
 const props = defineProps<{
-  issue: string;
+  issue: Issue | string;
 }>();
 
 // 当组件彻底挂载
