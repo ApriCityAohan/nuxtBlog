@@ -4,17 +4,12 @@
 </template>
 
 <script setup lang="ts">
-import { useCopyCode } from "markdown-it-copy-code";
 const route = useRoute();
 
 const { id } = route.params;
 
 useHead({
   title: `Post ${id}`,
-});
-
-onMounted(() => {
-  useCopyCode();
 });
 </script>
 
