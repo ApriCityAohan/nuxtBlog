@@ -1,6 +1,6 @@
 <template>
   <div>{{ $route.params.id }} - 博客页面</div>
-  <markdown />
+  <!-- <markdown  /> -->
 </template>
 
 <script setup lang="ts">
