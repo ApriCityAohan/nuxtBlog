@@ -1,6 +1,6 @@
 <template>
   <div class="prose">
-    <DocRender :content="typeof issue === 'string' ? issue : issue?.body" />
+    <DocRender :content="typeof issue === 'string' ? issue : issue.body" />
   </div>
 </template>
 

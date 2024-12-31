@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "6.12.2",
+    "gsap": "^3.12.5",
     "highlight.js": "^11.11.1",
     "markdown-it": "^14.1.0",
     "markdown-it-copy-code": "^0.0.3",
     "markdown-it-highlightjs": "^4.2.0",
     "nuxt": "^3.15.0",
+    "pattern.css": "^1.0.0",
     "vue": "latest",
     "vue-router": "latest"
   },
