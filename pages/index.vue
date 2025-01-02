@@ -57,7 +57,7 @@ onMounted(() => {
     let introduceTl = gsap.timeline();
     introduceTl
       .from("#hello", { duration: 1, scale: 0, opacity: 0, y: 50 })
-      .from("#myName", { duration: 1, scale: 0, opacity: 0, y: 50 });
+      .from("#myName", { duration: 1, scale: 0, opacity: 0, y: 50 }, "<0.5");
 
     // Typing动画
     let typingTl = gsap.timeline({ repeat: 4, repeatDelay: 1 });
