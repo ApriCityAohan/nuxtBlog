@@ -9,7 +9,7 @@
       ></NuxtImg>
     </NuxtLink>
     <div class="m-auto"></div>
-    <nav class="grid gap-2 grid-flow-col">
+    <nav class="grid gap-2 grid-flow-col place-content-center">
       <NuxtLink to="/blog" class="opacity-70 transition-opacity hover:opacity-100">Blog</NuxtLink>
       <NuxtLink to="">
         <Icon

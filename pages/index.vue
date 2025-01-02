@@ -23,7 +23,7 @@
       class="flex flex-col justify-center max-w-xl md:max-w-5xl mx-auto overflow-hidden text-black"
     >
       <Divider title="About Me" />
-      <div class="p-4 border rounded-lg shadow-xl bg-slate-50" id="aboutMe">
+      <div class="p-4 border rounded-lg shadow-xl bg-slate-50 mx-5 md:mx-0" id="aboutMe">
         <markdown :issue="readme" />
       </div>
       <Divider />
