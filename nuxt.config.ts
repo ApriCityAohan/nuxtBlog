@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxt/icon", "@nuxt/image"],
   css: ["@/assets/styles/markdown.scss", "pattern.css/dist/pattern.min.css"],
   colorMode: {
     storage: "localStorage",
