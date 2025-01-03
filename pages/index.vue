@@ -1,6 +1,6 @@
 <template>
   <div class="w-full pattern-cross-dots-md bg-gray-50 text-gray-400">
-    <div class="text-black font-sans flex flex-col items-center justify-center space-y-8 py-24">
+    <div class="text-black flex flex-col items-center justify-center space-y-8 py-24">
       <h1 class="text-3xl md:text-5xl font-semibold text-center flex justify-center" id="hello">
         <span>🎉</span>
         <p
