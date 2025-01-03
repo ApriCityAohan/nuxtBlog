@@ -1,8 +1,6 @@
 <template>
   <div class="w-full pattern-cross-dots-md bg-gray-50 text-gray-400">
-    <div
-      class="introduce text-black font-sans flex flex-col items-center justify-center space-y-8 py-32"
-    >
+    <div class="text-black font-sans flex flex-col items-center justify-center space-y-8 py-24">
       <h1 class="text-3xl md:text-5xl font-semibold text-center flex justify-center" id="hello">
         <span>🎉</span>
         <p
@@ -82,9 +80,4 @@ onUnmounted(() => {
 });
 </script>
 
-<style lang="scss" scoped>
-.introduce {
-  background: url("/assets/img/background.png") no-repeat center;
-  background-size: cover;
-}
-</style>
+<style lang="scss" scoped></style>
