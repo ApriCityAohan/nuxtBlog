@@ -1,4 +1,4 @@
-import type { Readme } from "./type";
+import type { Readme, Issue } from "./type";
 
 import {} from "./query";
 
@@ -9,5 +9,12 @@ const { VITE_OWNER, VITE_BLOG_REPO } = import.meta.env;
 export const getReadme = () => {
   return useGithubFetch<Readme>(
     `https://api.github.com/repos/${VITE_OWNER}/${VITE_BLOG_REPO}/readme`,
+  );
+};
+
+/* 获取Issus列表 */
+export const getIssues = () => {
+  return useGithubFetch<Issue[]>(
+    `https://api.github.com/repos/${VITE_OWNER}/${VITE_BLOG_REPO}/issues`,
   );
 };
