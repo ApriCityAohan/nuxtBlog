@@ -61,6 +61,16 @@
     word-break: break-word;
   }
 
+  /* check task框 */
+  .task-list{
+    list-style-type: none;
+    padding-left: 0;
+
+    input[type="checkbox"] {
+      margin-right: 0.5em;
+    }
+  }
+
   /* anchor */
   a {
     text-decoration: underline var(--common-bd);
@@ -110,5 +120,30 @@
     border-color: currentcolor;
     border-style: dashed;
     opacity: 0.2;
+  }
+
+  /* Table （表格） */
+  table {
+    width: 100%;
+    margin-block: 1em;
+    border-radius: var(--common-rd);
+    overflow: hidden;
+
+    th {
+      text-align: center;
+    }
+
+    th,
+    td {
+      padding: 0.3em 0.8em;
+    }
+
+    thead {
+      background-color: var(--common-bg);
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--common-bg);
+    }
   }
 }
