@@ -1,6 +1,8 @@
 <template>
   <footer class="py-5">
-    <div class="flex gap-2 flex-col items-center justify-center opacity-70 text-sm md:flex-row">
+    <div
+      class="flex gap-2 flex-col items-center justify-center opacity-70 text-sm md:flex-row dark:text-white"
+    >
       <NuxtLink
         to="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         target="__blank"

@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full fixed backdrop-blur-md shadow-sm p-4 z-50 flex">
+  <header class="w-full fixed backdrop-blur-md shadow-sm p-4 z-50 flex dark:text-white">
     <NuxtLink to="/">
       <NuxtImg
         src="https://avatars.githubusercontent.com/u/99794536?v=4&size=64"

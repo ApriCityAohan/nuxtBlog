@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed bottom-0 top-0 left-0 right-0 pointer-events-none select-none"
+    class="fixed bottom-0 top-0 left-0 right-0 pointer-events-none select-none dark:bg-black"
     style="z-index: -1"
     :style="`mask-image: ${mask}; -webkit-mask-image: ${mask}`"
   >
@@ -213,8 +213,11 @@ onMounted(() => {
   start.value(); // 启动动画
 });
 
+const dark = useColorMode();
 // 生成遮罩
 const mask = computed(() => {
+  if (dark.value === "dark") return "none";
+
   return "radial-gradient(circle, transparent, black)";
 });
 </script>

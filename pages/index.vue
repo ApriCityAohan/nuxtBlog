@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-black flex flex-col items-center justify-center space-y-8 py-24">
+    <div class="flex flex-col items-center justify-center space-y-8 py-24">
       <h1 class="text-3xl md:text-5xl font-semibold text-center flex justify-center" id="hello">
         <span>🎉</span>
         <p
@@ -17,11 +17,12 @@
       </p>
       <p class="text-xl md:text-2xl font-bold h-8" id="typing-text">一位爱动漫的人</p>
     </div>
-    <div
-      class="flex flex-col justify-center max-w-xl md:max-w-5xl mx-auto overflow-hidden text-black"
-    >
+    <div class="flex flex-col justify-center max-w-xl md:max-w-5xl mx-auto">
       <Divider title="About Me" />
-      <div class="p-4 border rounded-lg shadow-xl bg-slate-50 mx-5 md:mx-0" id="aboutMe">
+      <div
+        class="p-4 border dark:border-none rounded-lg shadow-xl bg-slate-50 dark:bg-slate-900 mx-5 md:mx-0"
+        id="aboutMe"
+      >
         <markdown :issue="readme" />
       </div>
       <Divider />

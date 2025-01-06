@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <main>
+    <main class="dark:text-white">
       <ArtPlum />
       <NuxtPage />
     </main>
