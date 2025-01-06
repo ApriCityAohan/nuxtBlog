@@ -9,9 +9,9 @@
           </div>
         </template>
       </Divider>
-      <ul>
+      <ul class="posts-list">
         <template v-for="issue in issuesList" :key="issue.id">
-          <div v-if="issue.isMarked" class="relative pointer-events-none select-none h-20">
+          <div v-if="issue.isMarked" class="years relative pointer-events-none select-none h-20">
             <span class="year-stroke font-bold font-mono text-transparent opacity-15 absolute">{{
               issue.year
             }}</span>
@@ -56,13 +56,20 @@ let gsapCtx: gsap.Context;
 
 onMounted(() => {
   gsapCtx = gsap.context(() => {
-    // gsap.from("#blog-list li", {
-    //   duration: 0.5,
-    //   y: 10,
-    //   opacity: 0,
-    //   stagger: 0.1,
-    //   ease: "power1.in",
-    // });
+    gsap.from(".years", {
+      duration: 0.5,
+      y: 10,
+      opacity: 0,
+      stagger: 0.1,
+      ease: "power1.in",
+    });
+    gsap.from(".posts-list li", {
+      duration: 0.5,
+      y: 10,
+      opacity: 0,
+      stagger: 0.1,
+      ease: "power1.in",
+    });
   });
 });
 
