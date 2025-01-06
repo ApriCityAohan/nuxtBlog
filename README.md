@@ -1,5 +1,3 @@
-
-
 <div align="center">
 
 ## Nuxt-blog for Issue
@@ -22,7 +20,7 @@
 - [x] index页面基础搭建
 - [x] 基础数据渲染
 - [x] layout布局
-- [ ] 博客列表基础布局、渲染
+- [x] 博客列表基础布局、渲染
 - [ ] 文章详情基础布局、渲染
 - [ ] 搜索页面基础布局、渲染
 - [ ] 整体样式优化
@@ -36,16 +34,18 @@
 
 也就想到这些了，能力有限，大多数还得是DIY页面
 
-~反正API写好了调用就行了，只需要考虑样式和交互就行~
+*反正API写好了调用就行了，只需要考虑样式和交互就行*
 
+- [x] canvas树枝动态背景（后续考虑封装组件独立开源）
 - [ ] 评论功能
 - [ ] 部分自定义功能(列如头部导航-头像、核心导航栏、左侧导航栏,页脚等)
 
 ## ✨ 特点
+
 (还在筹备当中)
 
-
 ## 📖 使用方法
+
 (开发完毕后进行更新)
 
 ## 🔧 本地开发
@@ -55,8 +55,6 @@
 - **Node.js** - [`v18.0.0`](https://nodejs.org/en) 或更新版本
 - **文本编辑器** - 推荐使用 [Visual Studio Code](https://code.visualstudio.com/) 以及 [Volar 扩展](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-
-
 确保安装依赖项：
 
 ```shell
@@ -64,6 +62,7 @@ pnpm install
 ```
 
 启动开发服务
+
 ```shell
 pnpm run dev
 ```
