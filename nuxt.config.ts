@@ -17,11 +17,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: [
-    "@/assets/styles/markdown.scss",
-    "@/assets/styles/global.css",
-    "pattern.css/dist/pattern.min.css",
-  ],
+  css: ["@/assets/styles/markdown.scss", "@/assets/styles/global.css"],
   colorMode: {
     storage: "localStorage",
   },
