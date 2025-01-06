@@ -19,7 +19,7 @@ export function formatDate(date: string, fmt: string = "yyyy/MM/dd"): string {
  * @param posts
  * @returns any[]
  */
-export function insertYearToPosts(posts: any[]): any[] {
+export function insertYearToPosts(posts: any): any[] {
   let currentYear = -1;
 
   return posts.reduce((posts: any, post: any) => {
