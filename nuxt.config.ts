@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxt/icon", "@nuxt/image"],
+  modules: [
+    "@vueuse/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxt/icon",
+    "@nuxt/image",
+  ],
   app: {
     head: {
       noscript: [{ innerHTML: "This website requires JavaScript." }],
