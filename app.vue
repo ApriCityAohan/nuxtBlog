@@ -1,5 +1,8 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <main>
+      <ArtPlum />
+      <NuxtPage />
+    </main>
   </NuxtLayout>
 </template>

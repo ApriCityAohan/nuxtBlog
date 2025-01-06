@@ -1,8 +1,6 @@
 <template>
-  <footer class="py-5 pattern-cross-dots-md bg-gray-50 text-gray-400">
-    <div
-      class="flex gap-2 flex-col items-center justify-center text-black opacity-70 text-sm md:flex-row"
-    >
+  <footer class="py-5">
+    <div class="flex gap-2 flex-col items-center justify-center opacity-70 text-sm md:flex-row">
       <NuxtLink
         to="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         target="__blank"
