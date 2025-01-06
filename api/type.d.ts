@@ -17,6 +17,11 @@ export interface Readme {
     html: string;
   };
 }
+export interface IssueResult {
+  incomplete_results: boolean;
+  items: Issue[];
+  total_count: number;
+}
 
 /** Issue 数据 */
 export interface Issue {

@@ -1,4 +1,4 @@
-import type { Readme, Issue } from "./type";
+import type { Readme, IssueResult, Issue } from "./type";
 import type { IssueQuery } from "./query";
 
 // 环境变量
@@ -27,5 +27,5 @@ export const searchIssues = (q: string, opt?: IssueQuery) => {
     query += buildQueryStr(opt);
   }
 
-  return useGithubFetch<Issue[]>(`https://api.github.com/search/issues${query}`);
+  return useGithubFetch<IssueResult>(`https://api.github.com/search/issues${query}`);
 };
