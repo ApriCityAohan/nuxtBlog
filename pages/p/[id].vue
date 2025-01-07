@@ -1,15 +1,17 @@
 <template>
-  <div>{{ $route.params.id }} - 博客页面</div>
-  <!-- <markdown  /> -->
+  <markdown :issue="data || ''" />
 </template>
 
 <script setup lang="ts">
+import { getIssue } from "@/api";
 const route = useRoute();
 
 const { id } = route.params;
 
+const { data } = await getIssue(id as string);
+
 useHead({
-  title: `Post ${id}`,
+  title: data.value?.title,
 });
 </script>
 
