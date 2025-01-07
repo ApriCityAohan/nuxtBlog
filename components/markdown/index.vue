@@ -1,5 +1,5 @@
 <template>
-  <div class="zw prose relative px-4 md:px-0">
+  <div class="zw prose relative pl-8 md:px-0">
     <!-- 文章标题 -->
     <DocTitle :issue="issue"></DocTitle>
 
