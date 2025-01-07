@@ -1,5 +1,7 @@
 <template>
-  <markdown :issue="data || ''" />
+  <div class="max-w-[70ch] mx-auto">
+    <markdown :issue="data || ''" />
+  </div>
 </template>
 
 <script setup lang="ts">

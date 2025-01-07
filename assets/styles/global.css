@@ -1,7 +1,9 @@
-:root{
-    --ah-header-height: 65px;
+:root {
+  --ah-header-height: 65px;
 }
 
-
-
-
+html,
+body,
+#nuxt-root {
+  scroll-behavior: smooth;
+}
