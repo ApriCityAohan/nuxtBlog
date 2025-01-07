@@ -13,7 +13,38 @@
     border-radius: var(--common-rd);
   }
 
-  /* T1-6 标题 */
+  /* 标题样式 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+  }
+
+  /* 锚点标识 */
+  h2,
+  h3,
+  h4 {
+    margin-left: -1em;
+    & > a {
+      opacity: 0;
+      transition: var(--common-transition);
+      text-decoration: none;
+    }
+
+    &:hover > a {
+      opacity: 0.7;
+    }
+  }
+
+  /* T1-6 标题字体大小 */
   h1 {
     font-size: 2.25em;
     line-height: 1.2;
