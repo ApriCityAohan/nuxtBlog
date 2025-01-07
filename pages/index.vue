@@ -40,7 +40,7 @@ import { getReadme } from "@/api";
 import DocRender from "~/components/markdown/DocRender.vue";
 
 if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, TextPlugin);
 }
 
 // gsap.registerPlugin(TextPlugin, ScrollTrigger);
