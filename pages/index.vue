@@ -39,7 +39,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { getReadme } from "@/api";
 import DocRender from "~/components/markdown/DocRender.vue";
 
-gsap.registerPlugin(TextPlugin, ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
+// gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
 const { data } = await getReadme();
 
