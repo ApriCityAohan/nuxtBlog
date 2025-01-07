@@ -20,10 +20,12 @@
     <div class="flex flex-col justify-center max-w-xl md:max-w-5xl mx-auto">
       <Divider title="About Me" />
       <div
-        class="p-4 border dark:border-none rounded-lg shadow-xl bg-slate-50 dark:bg-slate-900 mx-5 md:mx-0"
+        class="p-4 border dark:border-none rounded-lg shadow-xl bg-slate-50 dark:bg-slate-900 mx-3 md:mx-0"
         id="aboutMe"
       >
-        <markdown :issue="readme" />
+        <div class="prose">
+          <DocRender :content="readme" />
+        </div>
       </div>
       <Divider />
     </div>
@@ -35,6 +37,7 @@ import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { getReadme } from "@/api";
+import DocRender from "~/components/markdown/DocRender.vue";
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
