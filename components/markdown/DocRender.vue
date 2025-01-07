@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { md } from "./markdow-it";
+import { md } from "./markdown-it";
 import { useCopyCode } from "markdown-it-copy-code";
 
 const { content } = defineProps(["content"]);
