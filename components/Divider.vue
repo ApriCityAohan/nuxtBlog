@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center text-lg md:text-xl font-bold m-8">
+  <div class="flex items-center text-lg md:text-xl font-bold m-8 dark:text-white">
     <div class="flex-auto border-b border-dashed border-b-slate-500"></div>
     <div class="mx-4" v-if="title">{{ title }}</div>
     <slot name="content"></slot>

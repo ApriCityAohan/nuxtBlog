@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="dark:text-white">
     <ul class="flex gap-3 mb-3 text-2xl md:text-4xl mt-7" id="milestones-list">
       <li
         class="cursor-pointer transition-opacity"
