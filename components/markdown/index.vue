@@ -1,6 +1,12 @@
 <template>
   <div class="zw prose relative">
+    <!-- 文章标题 -->
     <DocTitle :issue="issue"></DocTitle>
+
+    <!-- 文章目录 -->
+    <DocToc></DocToc>
+
+    <!-- 文章内容 -->
     <DocRender :content="typeof issue === 'string' ? issue : issue.body" />
   </div>
 </template>
@@ -10,6 +16,7 @@ import { useCopyCode } from "markdown-it-copy-code";
 import type { Issue } from "@/api/type";
 import DocRender from "./DocRender.vue";
 import DocTitle from "./DocTitle.vue";
+import DocToc from "./DocToc.vue";
 
 const props = defineProps<{
   issue: Issue | string;
