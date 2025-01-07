@@ -1,5 +1,6 @@
 <template>
-  <div class="prose">
+  <div class="zw prose relative">
+    <DocTitle :issue="issue"></DocTitle>
     <DocRender :content="typeof issue === 'string' ? issue : issue.body" />
   </div>
 </template>
@@ -8,6 +9,7 @@
 import { useCopyCode } from "markdown-it-copy-code";
 import type { Issue } from "@/api/type";
 import DocRender from "./DocRender.vue";
+import DocTitle from "./DocTitle.vue";
 
 const props = defineProps<{
   issue: Issue | string;
@@ -19,3 +21,9 @@ onMounted(() => {
   useCopyCode();
 });
 </script>
+
+<style lang="scss" scoped>
+.zw {
+  padding-top: var(--ah-header-height);
+}
+</style>
