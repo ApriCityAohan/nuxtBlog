@@ -1,5 +1,5 @@
 <template>
-  <li class="overflow-auto">
+  <li class="overflow-auto dark:text-white">
     <NuxtLink
       :to="`/p/${issue.number}`"
       class="w-full mb-6 flex flex-col transition-opacity opacity-70 hover:opacity-100 md:flex-row md:items-center md:gap-2"
