@@ -38,6 +38,9 @@ importers:
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
+      markdown-it-anchor:
+        specifier: ^9.2.0
+        version: 9.2.0(@types/markdown-it@14.1.2)(markdown-it@14.1.0)
       markdown-it-copy-code:
         specifier: ^0.0.3
         version: 0.0.3(markdown-it@14.1.0)
@@ -47,6 +50,9 @@ importers:
       markdown-it-task-checkbox:
         specifier: ^1.0.6
         version: 1.0.6
+      markdown-it-toc-done-right:
+        specifier: ^4.2.0
+        version: 4.2.0
       nuxt:
         specifier: ^3.15.0
         version: 3.15.0(@parcel/watcher@2.5.0)(@types/node@22.10.2)(db0@0.2.1)(eslint@9.17.0(jiti@2.4.2))(ioredis@5.4.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.29.1)(sass@1.83.0)(terser@5.37.0)(typescript@5.7.2)(vite@6.0.6(@types/node@22.10.2)(jiti@2.4.2)(sass@1.83.0)(terser@5.37.0)(yaml@2.6.1))(yaml@2.6.1)
@@ -2693,6 +2699,12 @@ packages:
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
+  markdown-it-anchor@9.2.0:
+    resolution: {integrity: sha512-sa2ErMQ6kKOA4l31gLGYliFQrMKkqSO0ZJgGhDHKijPf0pNFM9vghjAh3gn26pS4JDRs7Iwa9S36gxm3vgZTzg==}
+    peerDependencies:
+      '@types/markdown-it': '*'
+      markdown-it: '*'
+
   markdown-it-copy-code@0.0.3:
     resolution: {integrity: sha512-MDDmuk/kBxjd94RGsBxfWeDBbl/MUNpxUaD0XdYCxGnPv69pdAZ3vQaGAOolNaCPe4+gft9wWVYjuURv5oa3rw==}
     peerDependencies:
@@ -2703,6 +2715,9 @@ packages:
 
   markdown-it-task-checkbox@1.0.6:
     resolution: {integrity: sha512-7pxkHuvqTOu3iwVGmDPeYjQg+AIS9VQxzyLP9JCg9lBjgPAJXGEkChK6A2iFuj3tS0GV3HG2u5AMNhcQqwxpJw==}
+
+  markdown-it-toc-done-right@4.2.0:
+    resolution: {integrity: sha512-UB/IbzjWazwTlNAX0pvWNlJS8NKsOQ4syrXZQ/C72j+jirrsjVRT627lCaylrKJFBQWfRsPmIVQie8x38DEhAQ==}
 
   markdown-it@14.1.0:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
@@ -7267,6 +7282,11 @@ snapshots:
       '@babel/types': 7.26.3
       source-map-js: 1.2.1
 
+  markdown-it-anchor@9.2.0(@types/markdown-it@14.1.2)(markdown-it@14.1.0):
+    dependencies:
+      '@types/markdown-it': 14.1.2
+      markdown-it: 14.1.0
+
   markdown-it-copy-code@0.0.3(markdown-it@14.1.0):
     dependencies:
       markdown-it: 14.1.0
@@ -7276,6 +7296,8 @@ snapshots:
       highlight.js: 11.11.1
 
   markdown-it-task-checkbox@1.0.6: {}
+
+  markdown-it-toc-done-right@4.2.0: {}
 
   markdown-it@14.1.0:
     dependencies:
