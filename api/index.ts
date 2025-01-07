@@ -18,6 +18,13 @@ export const getIssues = () => {
   );
 };
 
+/* 获取单篇issue */
+export const getIssue = (id: string) => {
+  return useGithubFetch<Issue>(
+    `https://api.github.com/repos/${VITE_OWNER}/${VITE_BLOGS_REPO}/issues/${id}`,
+  );
+};
+
 /* 搜索Issue */
 export const searchIssues = (q: string, opt?: IssueQuery) => {
   // 拼接查询字符串
