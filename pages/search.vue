@@ -29,6 +29,8 @@
 import gsap from "gsap";
 import { getIssues, getLabels, searchIssues } from "@/api";
 
+useHead({ title: "Search" });
+
 // 获取所有 labels
 const { data: labels } = await getLabels();
 
