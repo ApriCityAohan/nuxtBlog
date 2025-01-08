@@ -25,11 +25,14 @@
           class="opacity-70 transition-opacity hover:opacity-100"
         ></Icon>
       </NuxtLink>
+      <DarkBtn></DarkBtn>
     </nav>
   </header>
   <div class="header-safe-area"></div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import DarkBtn from "./DarkBtn.vue";
+</script>
 
 <style lang="scss" scoped></style>
