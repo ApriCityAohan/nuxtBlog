@@ -1,14 +1,12 @@
 <template>
   <div class="cursor-pointer opacity-70 transition-opacity hover:opacity-100" @click="handleDark">
     <ColorScheme placeholder="..." tag="span">
-      <ClientOnly>
-        <Icon
-          v-if="$colorMode.preference === 'dark'"
-          name="mingcute:moon-stars-line"
-          size="24"
-        ></Icon>
-        <Icon v-else name="mingcute:sun-fill" size="24"></Icon>
-      </ClientOnly>
+      <Icon
+        v-show="$colorMode.preference === 'dark'"
+        name="mingcute:moon-stars-line"
+        size="24"
+      ></Icon>
+      <Icon v-show="$colorMode.preference === 'light'" name="mingcute:sun-fill" size="24"></Icon>
     </ColorScheme>
   </div>
 </template>
