@@ -11,7 +11,7 @@
     <div class="m-auto"></div>
     <nav class="grid gap-5 grid-flow-col place-content-center">
       <NuxtLink to="/blog" class="opacity-70 transition-opacity hover:opacity-100">Blog</NuxtLink>
-      <NuxtLink to="">
+      <NuxtLink to="/search">
         <Icon
           name="mingcute:search-3-line"
           size="24"

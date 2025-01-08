@@ -12,10 +12,14 @@ export const getReadme = () => {
 };
 
 /* 获取Issus列表 */
-export const getIssues = () => {
-  return useGithubFetch<Issue[]>(
+export const getIssues = (query?: IssueQuery) => {
+  // 拼接查询字符串
+  const path = addSearchParamsToUrl(
     `https://api.github.com/repos/${VITE_OWNER}/${VITE_BLOGS_REPO}/issues`,
+    query,
   );
+
+  return useGithubFetch<Issue[]>(path);
 };
 
 /* 获取单篇issue */
