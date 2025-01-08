@@ -1,7 +1,9 @@
 <template>
-  <div class="cursor-pointer opacity-70 transition-opacity hover:opacity-100" @click="handleDark">
-    <Icon :name="theme" size="24"></Icon>
-  </div>
+  <ClientOnly>
+    <div class="cursor-pointer opacity-70 transition-opacity hover:opacity-100" @click="handleDark">
+      <Icon :name="theme" size="24"></Icon>
+    </div>
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
@@ -12,10 +14,6 @@ const handleDark = () => {
 };
 
 const theme = computed(() => {
-  if (colorMode.value === "system") {
-    return "mingcute:moonlight-line";
-  }
-
   return colorMode.value === "dark" ? "mingcute:moon-stars-line" : "mingcute:sun-line";
 });
 </script>
