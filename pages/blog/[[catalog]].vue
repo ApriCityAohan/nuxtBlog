@@ -31,6 +31,10 @@ const route = useRoute();
 // 编目参数
 const catalog = route.params.catalog as string;
 
+useHead({
+  title: catalog || "All",
+});
+
 // 搜索文章结果
 const searchResult = ref();
 // 文章列表
