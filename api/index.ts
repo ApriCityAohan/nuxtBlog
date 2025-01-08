@@ -1,4 +1,4 @@
-import type { Readme, IssueResult, Issue, Milestone } from "./type";
+import type { Readme, IssueResult, Issue, Label, Milestone } from "./type";
 import type { IssueQuery } from "./query";
 
 // 环境变量
@@ -39,6 +39,13 @@ export const searchIssues = (q: string, opt?: IssueQuery) => {
   }
 
   return useGithubFetch<IssueResult>(`https://api.github.com/search/issues${query}`);
+};
+
+/* 获取标签 */
+export const getLabels = () => {
+  return useGithubFetch<Label[]>(
+    `https://api.github.com/repos/${VITE_OWNER}/${VITE_BLOGS_REPO}/labels`,
+  );
 };
 
 /* 里程碑分类 */
