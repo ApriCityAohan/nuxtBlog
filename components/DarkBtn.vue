@@ -1,9 +1,9 @@
 <template>
-  <ClientOnly>
-    <div class="cursor-pointer opacity-70 transition-opacity hover:opacity-100" @click="handleDark">
+  <div class="cursor-pointer opacity-70 transition-opacity hover:opacity-100" @click="handleDark">
+    <ColorScheme placeholder="..." tag="span">
       <Icon :name="theme" size="24"></Icon>
-    </div>
-  </ClientOnly>
+    </ColorScheme>
+  </div>
 </template>
 
 <script lang="ts" setup>
