@@ -38,3 +38,15 @@ export const md = new markdownIt({
   .use(PluginTaskCheck)
   .use(PluginHighligh)
   .use(PluginCopy);
+
+// 重写图片渲染规则(SEO优化)
+md.renderer.rules.image = (tokens, idx) => {
+  // 获取当前token
+  const token = tokens[idx];
+  // 获取图片地址
+  const src = token.attrGet("src");
+  // 获取图片标题
+  const alt = token.content;
+
+  return `<img src="${src}" alt="${alt}" referrerpolicy='no-referrer' />`;
+};

@@ -3,6 +3,7 @@
     <NuxtLink to="/">
       <NuxtImg
         src="https://avatars.githubusercontent.com/u/99794536?v=4&size=64"
+        alt="@ApriCityAohan"
         height="32"
         width="32"
         class="rounded-full"

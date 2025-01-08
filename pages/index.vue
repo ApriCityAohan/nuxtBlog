@@ -39,6 +39,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { getReadme } from "@/api";
 import DocRender from "~/components/markdown/DocRender.vue";
 
+useHead({
+  title: "前端技术分享与生活笔记 | 傲寒的博客",
+});
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 }
