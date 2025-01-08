@@ -1,13 +1,7 @@
 <template>
   <div class="cursor-pointer opacity-70 transition-opacity hover:opacity-100" @click="handleDark">
-    <ColorScheme placeholder="..." tag="span">
-      <Icon
-        v-show="$colorMode.preference === 'dark'"
-        name="mingcute:moon-stars-line"
-        size="24"
-      ></Icon>
-      <Icon v-show="$colorMode.preference === 'light'" name="mingcute:sun-fill" size="24"></Icon>
-    </ColorScheme>
+    <Icon v-show="$colorMode.value === 'dark'" name="mingcute:moon-stars-line" size="24"></Icon>
+    <Icon v-show="$colorMode.value === 'light'" name="mingcute:sun-fill" size="24"></Icon>
   </div>
 </template>
 
