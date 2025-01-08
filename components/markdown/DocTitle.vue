@@ -20,7 +20,6 @@
         <NuxtLink
           v-for="label in issue.labels"
           :key="label.id"
-          :to="`/tags/${label.name}`"
           class="px-2 dark:text-white rounded-md !no-underline"
           :style="{ backgroundColor: `#${label.color}77` }"
         >
