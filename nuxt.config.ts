@@ -37,6 +37,11 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/styles/markdown.scss", "@/assets/styles/global.css"],
+  icon: {
+    serverBundle: {
+      collections: ["mingcute"],
+    },
+  },
   colorMode: {
     storage: "localStorage",
   },
