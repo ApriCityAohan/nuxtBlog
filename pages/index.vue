@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-col items-center justify-center space-y-8 py-24">
+    <div class="flex flex-col items-center justify-center space-y-8 py-20">
       <h1 class="text-3xl md:text-5xl font-semibold text-center flex justify-center" id="hello">
         <span>🎉</span>
         <p
