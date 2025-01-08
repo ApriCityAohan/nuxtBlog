@@ -27,6 +27,7 @@
       </NuxtLink>
     </nav>
   </header>
+  <div class="header-safe-area"></div>
 </template>
 
 <script setup lang="ts"></script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="zw prose relative px-8 md:px-0">
+  <div class="prose relative px-8 md:px-0">
     <!-- 文章标题 -->
     <DocTitle :issue="issue"></DocTitle>
 
@@ -29,8 +29,4 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss" scoped>
-.zw {
-  padding-top: var(--ah-header-height);
-}
-</style>
+<style lang="scss" scoped></style>

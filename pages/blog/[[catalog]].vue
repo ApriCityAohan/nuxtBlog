@@ -1,6 +1,6 @@
 <template>
   <div class="px-12">
-    <div class="zw max-w-3xl mx-auto text-black">
+    <div class="max-w-3xl mx-auto text-black">
       <SubNav />
       <Divider>
         <template #content>

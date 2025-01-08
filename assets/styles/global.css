@@ -2,6 +2,11 @@
   --ah-header-height: 65px;
 }
 
+.header-safe-area {
+  width: auto;
+  height: var(--ah-header-height);
+}
+
 html,
 body,
 #nuxt-root {
