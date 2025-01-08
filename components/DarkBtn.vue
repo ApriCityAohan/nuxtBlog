@@ -6,7 +6,7 @@
         name="mingcute:moon-stars-line"
         size="24"
       ></Icon>
-      <Icon name="mingcute:sun-line" size="24"></Icon>
+      <Icon name="mingcute:sun-fill" size="24"></Icon>
     </ColorScheme>
   </div>
 </template>
