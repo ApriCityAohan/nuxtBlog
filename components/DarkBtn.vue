@@ -3,7 +3,7 @@
     <!-- 
       会发生水和问题，但使用ColorScheme和ClientOnly
       解决了水和问题，
-      可是不能解决在vercel部署后图标请求丢失问题；
+      可是不能解决在vercel部署后图标请求丢失问题；（暂时无法解决）
     -->
     <Icon v-show="$colorMode.value === 'dark'" name="mingcute:moon-stars-line" size="24"></Icon>
     <Icon v-show="$colorMode.value === 'light'" name="mingcute:sun-fill" size="24"></Icon>
