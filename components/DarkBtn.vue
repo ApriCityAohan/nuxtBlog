@@ -16,7 +16,7 @@ const theme = computed(() => {
     return "mingcute:moonlight-line";
   }
 
-  return colorMode.value === "dark" ? "mingcute:sun-line" : "mingcute:moon-stars-line";
+  return colorMode.value === "dark" ? "mingcute:moon-stars-line" : "mingcute:sun-line";
 });
 </script>
 
